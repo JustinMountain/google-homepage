@@ -1,3 +1,10 @@
+html {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #000000;
+}
+
 body {
     margin: 0px;
 }
@@ -5,9 +12,14 @@ body {
 header {
     position: top;
     display: flex;
+    flex-direction: row;
     justify-content: right;
-    margin: 0.5em;
-    padding: 0.5em;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    color: rgba(0,0,0,0.87);
 }
 
 main > * {
@@ -22,15 +34,22 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 4.5em;
-    background-color: lightgrey;
     border-top: 10px;
-    border-color: grey;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+footer > * {
+    width: 50%;
+}
+
+footer a {
+    color: #70757A;
 }
 
 a {
-    color: red;
     text-decoration: none;
+    color: initial;
 }
 
 a:hover {
@@ -45,8 +64,26 @@ img {
     margin-top: 10em;
 }
 
+button {
+    background-color: #F8F9FA;
+    color: #3c4043;
+    margin: 11px 4px;
+    padding: 0px 16px;
+    width: 127px;
+    height: 36px;
+    border: none;
+    border-radius: 4px;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+}
+
+button:hover {
+    border: 1px solid #DADCE0;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+}
+
 .header-item {
-    margin: 1em;
+    margin: 0 1em;
 }
 
 .footer-item {
@@ -66,11 +103,32 @@ img {
     margin: 0.5em;
 }
 
+#login-btn {
+    background-color: #2B7DE9;
+    color: #FFFFFF;
+    width: 12ch;
+    font-weight: 400;
+}
+
+#login-btn:hover {
+    background-color: #4285F4;
+}
+
 #google-search-bar {
-    max-width: 100%;
+    max-width: 90%;
+    width: 584px;
     display: block;
+    border: 1px solid #DFE1E5;
+    border-radius: 24px;
+    height: 44px;
+    box-shadow: none;
+    margin: 2em auto;
     margin-left: auto;
     margin-right: auto;
+}
+
+#google-search-bar:hover {
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
 }
 
 #google-search-bar:hover {
@@ -85,4 +143,21 @@ img {
 #right-footer {
     display: flex;
     justify-content: right;
+}
+
+@media only screen and (max-width: 1380px) {
+  
+    #left-footer {
+        justify-content: center;
+    }
+
+    #right-footer {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    footer > * {
+        width: 100%;
+    }
 }
