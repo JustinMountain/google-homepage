@@ -13,7 +13,7 @@ header {
     position: top;
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -137,12 +137,12 @@ button:hover {
 
 #left-footer {
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
 }
 
 #right-footer {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
 }
 
 @media only screen and (max-width: 1380px) {
